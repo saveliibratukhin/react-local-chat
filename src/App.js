@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Enter from './components/Enter';
+import { Route, Routes } from "react-router-dom";
+import Chat from './components/Chat';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={ <Enter /> } />
+        <Route path='/chats/:roomId' element={ <Chat /> }/>
+      </Routes>
     </div>
   );
 }

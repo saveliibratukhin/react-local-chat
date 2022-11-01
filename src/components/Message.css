@@ -1,0 +1,34 @@
+.messageContainer {
+    background: rgba(0, 0, 255, 0.3);
+    border-radius: 15px;
+    min-width: 10%;
+    max-width: 90%;
+    align-self: flex-start;
+    margin: 5px;
+    text-align: start;
+    padding-block: 3px;
+    padding-inline: 15px;
+    overflow-wrap: anywhere;
+}
+
+.myMessage {
+    background: rgba(0, 104, 0, 0.3);
+    align-self: flex-end;
+}
+
+.senderName {
+    font-size: x-small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.messageText {
+    font-size:larger;
+    
+}
+
+.dateTimeText {
+    text-align: end;
+    font-size:xx-small;
+    font-weight: bold;
+}
